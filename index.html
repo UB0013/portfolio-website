@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <link rel="icon" type="image/jpg" href="images/favicon.png" />
+    <link rel="icon" href="images/favicon.png" sizes="any" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="images/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon.png"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usama Bin Faheem | Software Development Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Customizing Tailwind CSS theme
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#f0fdfa",
+                100: "#ccfbf1",
+                200: "#99f6e4",
+                300: "#5eead4",
+                400: "#2dd4bf",
+                500: "#14b8a6",
+                600: "#0d9488",
+                700: "#0f766e",
+                800: "#115e59",
+                900: "#134e4a",
+                950: "#042f2e",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-700">
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-xl font-bold text-slate-800"
+          >Usama Bin Faheem</a
+        >
+        <div class="hidden md:flex space-x-8 items-center">
+          <a
+            href="#experience"
+            class="text-slate-600 hover:text-primary-600 transition-colors"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="text-slate-600 hover:text-primary-600 transition-colors"
+            >Projects</a
+          >
+          <!-- LINK TO SHOWCASE PAGE #1: This is the link in your main navigation bar. -->
+          <a
+            href="showcase.html"
+            class="text-slate-600 hover:text-primary-600 transition-colors"
+            >Showcase</a
+          >
+          <a
+            href="#skills"
+            class="text-slate-600 hover:text-primary-600 transition-colors"
+            >Skills</a
+          >
+          <a
+            href="#contact"
+            class="bg-primary-500 text-white px-5 py-2 rounded-md hover:bg-primary-600 transition-colors font-semibold shadow-sm hover:shadow-md"
+            >Contact</a
+          >
+        </div>
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-slate-700">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+        <a
+          href="#experience"
+          class="block py-2 text-slate-600 hover:text-primary-600"
+          >Experience</a
+        >
+        <a
+          href="#projects"
+          class="block py-2 text-slate-600 hover:text-primary-600"
+          >Projects</a
+        >
+        <!-- This is the link in your mobile navigation menu. -->
+        <a
+          href="showcase.html"
+          class="block py-2 text-slate-600 hover:text-primary-600"
+          >Showcase</a
+        >
+        <a
+          href="#skills"
+          class="block py-2 text-slate-600 hover:text-primary-600"
+          >Skills</a
+        >
+        <a
+          href="#contact"
+          class="block mt-2 bg-primary-500 text-white text-center px-4 py-2 rounded-md hover:bg-primary-600"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="text-center py-20 bg-gradient-to-br from-slate-50 to-gray-200 rounded-lg mb-16"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900">
+          Usama Bin Faheem
+        </h1>
+        <p class="mt-4 text-lg md:text-xl text-primary-600 font-semibold">
+          Software Development Engineer | 3x Hackathon Winner
+        </p>
+        <p class="mt-3 text-md text-slate-500 max-w-2xl mx-auto">
+          A passionate developer with experience in building scalable AI-driven
+          applications and optimizing web solutions.
+        </p>
+        <div class="mt-8 flex justify-center items-center space-x-6">
+          <a
+            href="mailto:usamaformal@gmail.com"
+            class="text-slate-600 hover:text-primary-600 flex items-center space-x-2 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <span class="font-medium">Email</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/usamaf/"
+            class="text-slate-600 hover:text-primary-600 flex items-center space-x-2 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+            <span class="font-medium">LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/UB0013"
+            class="text-slate-600 hover:text-primary-600 flex items-center space-x-2 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            <span class="font-medium">GitHub</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Employment Experience -->
+      <section id="experience" class="py-12">
+        <h2
+          class="text-3xl font-bold text-slate-800 mb-8 border-b-2 border-primary-500 pb-3"
+        >
+          Employment Experience
+        </h2>
+        <div class="space-y-10">
+          <!-- Job 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-t-4 border-transparent hover:shadow-xl hover:border-primary-500 transition-all duration-300"
+          >
+            <div
+              class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2"
+            >
+              <h3 class="text-xl font-bold text-slate-900">
+                Software Engineer
+              </h3>
+              <p class="text-sm text-slate-500 mt-1 sm:mt-0">
+                May 2025 - Present
+              </p>
+            </div>
+            <p class="text-md font-medium text-primary-600 mb-4">
+              Pioneer Technology and Arts Academy, Texas USA
+            </p>
+            <ul
+              class="list-disc list-inside space-y-2 text-slate-600 leading-relaxed"
+            >
+              <li>
+                Developed an AI tutoring platform serving 1500 students across 7
+                US states, engineered for scalable and efficient operation.
+              </li>
+              <li>
+                Engineered a decoupled full-stack architecture on Next.js,
+                Express, Cloudflare to ensure low latency real time
+                interactions.
+              </li>
+              <li>
+                Integrated AI capabilities (Open AI, Gemini) for multimodal
+                lessons and automated curriculum mapping for seamless AI-driven
+                whiteboard illustrations.
+              </li>
+              <li>
+                Undertook fine tuning of LLM for tutoring use-cases, improving
+                response accuracy by 35%, created end user feedback loops.
+              </li>
+            </ul>
+          </div>
+          <!-- Job 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-t-4 border-transparent hover:shadow-xl hover:border-primary-500 transition-all duration-300"
+          >
+            <div
+              class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2"
+            >
+              <h3 class="text-xl font-bold text-slate-900">
+                Web Developer Student Assistant
+              </h3>
+              <p class="text-sm text-slate-500 mt-1 sm:mt-0">
+                Mar 2024 – May 2025
+              </p>
+            </div>
+            <p class="text-md font-medium text-primary-600 mb-4">
+              University of North Texas, Texas USA
+            </p>
+            <ul
+              class="list-disc list-inside space-y-2 text-slate-600 leading-relaxed"
+            >
+              <li>
+                Optimized website accessibility, user experience, and SEO by
+                implementing design preferences with HTML, CSS, and JavaScript,
+                ensuring WCAG accessibility compliance, which resulted in a 30%
+                improvement in performance scores.
+              </li>
+              <li>
+                Led migration of four websites by overseeing data transfer and
+                content migration, with no downtime, ensuring system reliability
+                while collaborating with cross-functional teams.
+              </li>
+              <li>
+                Automated content edits using Python scripts, reducing manual
+                effort by 66%.
+              </li>
+              <li>
+                Automated web application testing using Selenium, ensuring
+                high-quality code and reduced defects.
+              </li>
+            </ul>
+          </div>
+          <!-- Job 3 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-t-4 border-transparent hover:shadow-xl hover:border-primary-500 transition-all duration-300"
+          >
+            <div
+              class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2"
+            >
+              <h3 class="text-xl font-bold text-slate-900">
+                Software Development Engineer
+              </h3>
+              <p class="text-sm text-slate-500 mt-1 sm:mt-0">
+                Feb 2022 - July 2023
+              </p>
+            </div>
+            <p class="text-md font-medium text-primary-600 mb-4">
+              Infosys Ltd, India
+            </p>
+            <ul
+              class="list-disc list-inside space-y-2 text-slate-600 leading-relaxed"
+            >
+              <li>
+                Collaborated in requirements analysis and application grooming
+                for an internal booking application for 100+ users.
+              </li>
+              <li>
+                Designed and developed scalable software components using Java,
+                Spring Boot reducing database query latency by 20%.
+              </li>
+              <li>
+                Optimized deployment efficiency by automating CI/CD pipelines
+                using Docker and Jenkins, reducing roll back incidents by over
+                20%.
+              </li>
+              <li>
+                Boosted user adoption by updating end-user documentations,
+                reducing support requests by 15%.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Experience -->
+      <section id="projects" class="py-12">
+        <h2
+          class="text-3xl font-bold text-slate-800 mb-8 border-b-2 border-primary-500 pb-3"
+        >
+          Project Experience
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Cards Here... -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-t-4 border-transparent hover:shadow-xl hover:border-primary-500 transition-all duration-300"
+          >
+            <h3 class="text-xl font-bold text-slate-900">
+              Peterbilt Data Analysis
+            </h3>
+            <p class="text-sm font-semibold text-primary-500 mb-2">
+              Machine Learning | 2nd Place Data Hackathon
+            </p>
+            <p class="text-slate-600 mb-4 leading-relaxed">
+              Trained a predictive model using Scikit-learn and XGBoost,
+              achieving an accuracy of 80% by processing and visualizing truck
+              configuration data.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto pt-4">
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >Python</span
+              >
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >Scikit-learn</span
+              >
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >XGBoost</span
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-t-4 border-transparent hover:shadow-xl hover:border-primary-500 transition-all duration-300"
+          >
+            <h3 class="text-xl font-bold text-slate-900">
+              Accessible Vehicle Detection
+            </h3>
+            <p class="text-sm font-semibold text-primary-500 mb-2">
+              Computer Vision | 1st Place Hackathon
+            </p>
+            <p class="text-slate-600 mb-4 leading-relaxed">
+              Fine-tuned a YOLOv8 model on a custom dataset to detect the
+              International Symbol of accessibility with over 90% accuracy.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto pt-4">
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >Python</span
+              >
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >YOLOv8</span
+              >
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >Roboflow</span
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-t-4 border-transparent hover:shadow-xl hover:border-primary-500 transition-all duration-300"
+          >
+            <h3 class="text-xl font-bold text-slate-900">
+              GoBo Booking Application
+            </h3>
+            <p class="text-sm font-semibold text-primary-500 mb-2">
+              Full-Stack Web Application
+            </p>
+            <p class="text-slate-600 mb-4 leading-relaxed">
+              Built a secure booking application with real-time notifications
+              using WebSockets and automated API validation.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto pt-4">
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >Java</span
+              >
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >Spring Boot</span
+              >
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >React</span
+              >
+              <span
+                class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                >WebSocket</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Showcase Teaser -->
+      <section id="showcase-teaser" class="py-12">
+        <h2
+          class="text-3xl font-bold text-slate-800 mb-8 border-b-2 border-primary-500 pb-3"
+        >
+          Featured Showcase
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Teaser Item 1 -->
+          <div class="group">
+            <img
+              src="images/graduation.jpeg"
+              alt="Teaser image 1"
+              class="rounded-lg shadow-md group-hover:shadow-xl transition-shadow duration-300"
+            />
+          </div>
+          <!-- Teaser Item 2 -->
+          <div class="group">
+            <img
+              src="images/datathon.jpeg"
+              alt="Teaser image 2"
+              class="rounded-lg shadow-md group-hover:shadow-xl transition-shadow duration-300"
+            />
+          </div>
+          <!-- Teaser Item 3 -->
+          <div class="group">
+            <img
+              src="images/cvad.jpeg"
+              alt="Teaser image 3"
+              class="rounded-lg shadow-md group-hover:shadow-xl transition-shadow duration-300"
+            />
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <!-- LINK TO SHOWCASE PAGE #2: This is the button in your teaser section. -->
+          <a
+            href="showcase.html"
+            class="bg-primary-500 text-white px-8 py-3 rounded-md hover:bg-primary-600 transition-all duration-300 text-lg font-semibold shadow-md hover:shadow-lg"
+          >
+            View Full Showcase &rarr;
+          </a>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="py-12">
+        <h2
+          class="text-3xl font-bold text-slate-800 mb-8 border-b-2 border-primary-500 pb-3"
+        >
+          Technical Skills
+        </h2>
+        <div class="p-8 bg-white rounded-lg shadow-md">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Skills content here... -->
+            <div>
+              <h3 class="text-lg font-semibold text-slate-800 mb-4">
+                Programming & AI/ML
+              </h3>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Java</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Python</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >JavaScript</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >TypeScript</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >OpenAI API</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Gemini</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >LLMs</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >RAG</span
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-slate-800 mb-4">
+                Frameworks & Databases
+              </h3>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Spring Boot</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >React</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Next.js</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Node.js</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >MySQL</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >MongoDB</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Supabase</span
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-slate-800 mb-4">
+                Tools & Practices
+              </h3>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Docker</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Jenkins</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Git</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >CI/CD</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Agile</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >RESTful APIs</span
+                ><span
+                  class="bg-primary-100 text-primary-800 text-xs font-medium px-3 py-1 rounded-full"
+                  >Selenium</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="py-12">
+        <h2
+          class="text-3xl font-bold text-slate-800 mb-8 border-b-2 border-primary-500 pb-3"
+        >
+          Education
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Education content here... -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-t-4 border-transparent hover:shadow-xl hover:border-primary-500 transition-all duration-300"
+          >
+            <h3 class="text-xl font-bold text-slate-900">
+              Master of Science, Computer Science
+            </h3>
+            <p class="text-md font-medium text-primary-600">
+              University of North Texas
+            </p>
+            <p class="text-sm text-slate-500 mt-2">
+              Expected May 2025 | GPA: 4.0
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-t-4 border-transparent hover:shadow-xl hover:border-primary-500 transition-all duration-300"
+          >
+            <h3 class="text-xl font-bold text-slate-900">
+              Bachelor of Engineering
+            </h3>
+            <p class="text-md font-medium text-primary-600">
+              Chaitanya Bharathi Institute of Technology
+            </p>
+            <p class="text-sm text-slate-500 mt-2">
+              Graduated June 2019 | GPA: 3.5
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 text-slate-300">
+      <div class="container mx-auto px-6 py-12 text-center">
+        <h3 class="text-3xl font-bold text-white">Get In Touch</h3>
+        <p class="mt-3 max-w-lg mx-auto">
+          Whether you have a question or just want to say hi, I'll get back to
+          you!
+        </p>
+        <div class="mt-8">
+          <a
+            href="mailto:usamaformal@gmail.com"
+            class="bg-primary-500 text-white px-8 py-3 rounded-md hover:bg-primary-600 transition-colors text-lg font-semibold shadow-md hover:shadow-lg"
+            >Email Me</a
+          >
+        </div>
+        <div class="mt-10 flex justify-center items-center space-x-6 text-sm">
+          <span class="text-slate-500">&bull;</span>
+          <a
+            href="https://www.linkedin.com/in/usamaf"
+            class="hover:text-primary-400 transition-colors"
+            >LinkedIn</a
+          >
+          <span class="text-slate-500">&bull;</span>
+          <a
+            href="https://github.com/UB0013"
+            class="hover:text-primary-400 transition-colors"
+            >GitHub</a
+          >
+        </div>
+        <p class="mt-10 text-sm text-slate-500">
+          &copy; 2024 Usama Bin Faheem.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript for mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when a link is clicked
+      const menuLinks = mobileMenu.getElementsByTagName("a");
+      for (let i = 0; i < menuLinks.length; i++) {
+        menuLinks[i].addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>
